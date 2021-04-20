@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackgroundcolor"
+    tools:context=".HomeActivity">
+
+
+    <!--Banner-->
+    <LinearLayout
+        android:id="@+id/linearLayoutBanner"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewHomeLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/homepage_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:text="Raftaki Dünyanı Paylaş"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewHomeLogo"
+            app:layout_constraintStart_toEndOf="@+id/imageViewHomeLogo"
+            app:layout_constraintTop_toTopOf="@+id/imageViewHomeLogo"
+            app:layout_constraintVertical_bias="0.437" />
+
+    </LinearLayout>
+
+
+    <!--Filter Menu-->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menu_layout_color"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBanner"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Filtreler"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/filter_text_design">
+
+        </TextView>
+        <Button
+            android:id="@+id/categoryButton"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:background="@drawable/menu_buttons_design"
+            android:text="KATEGORİLER"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/categoryButton3"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/menu_buttons_design"
+            android:backgroundTintMode="src_over"
+            android:text="KATEGORİLER"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+        <Button
+            android:id="@+id/categoryButton2"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:background="@drawable/menu_buttons_design"
+            android:text="KATEGORİLER"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+    <!--Posts Layout-->
+    <FrameLayout
+        android:id="@+id/homeFrameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+
+    <!--Navigation Menu-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="@color/menuBarBackground"
+        app:itemBackground="@color/menuItemsBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/home_menu" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

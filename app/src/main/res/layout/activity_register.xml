@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackgroundcolor"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="302dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinnerdesign"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCountry"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            tools:src="@drawable/icon_home" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ivCountry"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:text="Şehirler" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <Spinner
+            android:id="@+id/citySpinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="271dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/regesterbuttondesign"
+        android:text="KAYDOL"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:hint="Şehirler"
+
+        android:background="@drawable/spinnerdesign"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+
+
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittextdesign"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F07E13"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/editTextLastName"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+
+
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittextdesign"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="Soyisim"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F07E13"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+
+
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittextdesign"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="E posta"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F07E13"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittextdesign"
+        android:ems="10"
+
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F07E13"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/citySpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

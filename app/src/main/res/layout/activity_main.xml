@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybackgroundcolor"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonKaydol"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/kaydolbuttondesign"
+        android:onClick="registerPage"
+        android:text="KAYDOL"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <Button
+        android:id="@+id/buttonGiris"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/girisbuttondesign"
+        android:onClick="anaSayfayaGit"
+        android:text="GİRİŞ"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="239dp"
+        android:layout_height="302dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/project_logo" />
+
+    <EditText
+
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="321dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/edittextdesign"
+        android:cursorVisible="false"
+        android:drawableEnd="@drawable/email_icon"
+        android:ems="10"
+        android:hint="E posta"
+
+
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F07E13"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGiris"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/buttonKaydol"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKaydol" />
+
+    <EditText
+
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="321dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextdesign"
+        android:drawableEnd="@drawable/password_icon"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F07E13"
+
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

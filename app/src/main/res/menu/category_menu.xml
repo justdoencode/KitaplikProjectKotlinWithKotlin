@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/takastakiKitaplar"
+        android:title="Takastaki Kitaplar" />
+    <item android:id="@+id/askıdakiKitaplar"
+        android:title="Askıdaki Kitaplar" />
+    <item android:id="@+id/sosyalPaylasimlar"
+        android:title="Sosyal Paylaşımlar" />
+</menu>
