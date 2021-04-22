@@ -17,6 +17,6 @@ class RegisterActivity : AppCompatActivity() {
 
         val spinnerAdapter=ArrayAdapter(this.applicationContext,android.R.layout.simple_spinner_item,items)
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        citySpinner1.adapter=spinnerAdapter
+        citySpinner.adapter=spinnerAdapter
     }
 }

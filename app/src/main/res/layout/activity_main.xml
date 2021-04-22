@@ -16,7 +16,7 @@
         android:background="@drawable/kaydolbuttondesign"
         android:onClick="registerPage"
         android:text="KAYDOL"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
@@ -29,7 +29,7 @@
         android:background="@drawable/girisbuttondesign"
         android:onClick="anaSayfayaGit"
         android:text="GİRİŞ"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
@@ -48,7 +48,7 @@
         android:layout_width="321dp"
         android:layout_height="65dp"
         android:layout_marginTop="35dp"
-        android:background="@drawable/edittextdesign"
+        android:background="@drawable/edittext_design_login"
         android:cursorVisible="false"
         android:drawableEnd="@drawable/email_icon"
         android:ems="10"
@@ -72,7 +72,7 @@
         android:layout_width="321dp"
         android:layout_height="65dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/edittextdesign"
+        android:background="@drawable/edittext_design_login"
         android:drawableEnd="@drawable/password_icon"
         android:ems="10"
         android:hint="Şifre"
