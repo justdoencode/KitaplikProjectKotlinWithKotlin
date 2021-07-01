@@ -46,7 +46,7 @@
 
 
     <!--Filter Menu-->
-    <LinearLayout
+    <!--<LinearLayout
         android:id="@+id/menuLayout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -100,7 +100,20 @@
             android:background="@drawable/menu_buttons_design"
             android:text="KATEGORİLER"
             android:textColor="#fff" />
-    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_add"
+            android:background="@drawable/add_button_design"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center">
+
+        </ImageButton>
+
+    </LinearLayout> -->
 
 
     <!--Posts Layout-->
@@ -112,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBanner"
         app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>

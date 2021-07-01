@@ -69,7 +69,7 @@ class HomeActivity : AppCompatActivity() {
         transaction.commit()
 
 
-        //Menu
+        /*Menu
         categoryButton.setOnClickListener { v: View ->
             v.background=getDrawable(R.drawable.menu_buttons_click_color)
             categoryButton2.background=getDrawable(R.drawable.menu_buttons_design)
@@ -87,7 +87,7 @@ class HomeActivity : AppCompatActivity() {
             categoryButton.background=getDrawable(R.drawable.menu_buttons_design)
             categoryButton2.background=getDrawable(R.drawable.menu_buttons_design)
             showMenu(v, R.menu.category_menu)
-        }
+        }*/
 
     }
     private fun showMenu(v: View, @MenuRes menuRes: Int) {

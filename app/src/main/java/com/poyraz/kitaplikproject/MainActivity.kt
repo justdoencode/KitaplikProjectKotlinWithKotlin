@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         val _anim=AnimationUtils.loadAnimation(this,R.anim.logo_animation)
         imageViewLogo.startAnimation(_anim)
 
+
+
     }
 
     fun anaSayfayaGit(view: View){

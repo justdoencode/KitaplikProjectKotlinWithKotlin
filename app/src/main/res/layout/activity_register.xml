@@ -86,7 +86,6 @@
 
         android:layout_marginBottom="15dp"
         android:background="@drawable/edittextdesign"
-        android:cursorVisible="false"
         android:ems="10"
         android:hint="İsim"
         android:inputType="textPersonName"
@@ -110,7 +109,6 @@
 
         android:layout_marginBottom="15dp"
         android:background="@drawable/edittextdesign"
-        android:cursorVisible="false"
         android:ems="10"
         android:hint="Soyisim"
         android:lines="1"
@@ -133,7 +131,6 @@
 
         android:layout_marginBottom="15dp"
         android:background="@drawable/edittextdesign"
-        android:cursorVisible="false"
         android:ems="10"
         android:hint="E posta"
         android:inputType="textEmailAddress"

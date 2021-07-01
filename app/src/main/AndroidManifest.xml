@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.poyraz.kitaplikproject">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +15,6 @@
         <activity android:name=".MessagesActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".activity_posts" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

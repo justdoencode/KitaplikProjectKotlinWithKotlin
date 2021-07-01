@@ -11,7 +11,7 @@ import android.view.MenuItem
 import android.widget.PopupMenu
 import androidx.annotation.MenuRes
 import kotlinx.android.synthetic.main.activity_home.bottomNavigationView
-import kotlinx.android.synthetic.main.activity_home.menuLayout
+//import kotlinx.android.synthetic.main.activity_home.menuLayout
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class ProfileActivity : AppCompatActivity() {
@@ -39,29 +39,29 @@ class ProfileActivity : AppCompatActivity() {
                 R.id.menuMessage -> {
                     val messagesActivity=Intent(this,MessagesActivity::class.java)
                     startActivity(messagesActivity)
-                    menuLayout.visibility=View.INVISIBLE
+                    //menuLayout.visibility=View.INVISIBLE
                 }
                 R.id.menuHome ->{
                     val homeActivity=Intent(this,HomeActivity::class.java)
                     startActivity(homeActivity)
-                    menuLayout.visibility=View.VISIBLE
+                    //menuLayout.visibility=View.VISIBLE
                 }
                 R.id.menuProfile ->{
                     val profileActivity=Intent(this,ProfileActivity::class.java)
                     startActivity(profileActivity)
-                    menuLayout.visibility=View.VISIBLE
+                    //menuLayout.visibility=View.VISIBLE
                 }
                 R.id.menuSettings ->{
                     val settingsActivity=Intent(this,SettingsActivity::class.java)
                     startActivity(settingsActivity)
-                    menuLayout.visibility=View.INVISIBLE
+                    //menuLayout.visibility=View.INVISIBLE
                 }
             }
         }
         bottomNavigationView.selectedItemId=R.id.menuProfile //default select
 
 
-        categoryButtonProfile.setOnClickListener { v: View ->
+        /*categoryButtonProfile.setOnClickListener { v: View ->
             v.background=getDrawable(R.drawable.menu_buttons_click_color)
             categoryButton2Profile.background=getDrawable(R.drawable.menu_buttons_design)
             categoryButton3Profile.background=getDrawable(R.drawable.menu_buttons_design)
@@ -78,7 +78,7 @@ class ProfileActivity : AppCompatActivity() {
             categoryButtonProfile.background=getDrawable(R.drawable.menu_buttons_design)
             categoryButton2Profile.background=getDrawable(R.drawable.menu_buttons_design)
             showMenu(v, R.menu.category_menu)
-        }
+        }*/
 
     }
     private fun showMenu(v: View, @MenuRes menuRes: Int) {
